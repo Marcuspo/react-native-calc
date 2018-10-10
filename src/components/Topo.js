@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-export defaut props => (
+export default class Topo extends Component {
+    render() {
+      return ( 
         <View>
             <Text>
-                TOPO
+                Topo
             </Text>
         </View>
-);
+
+      );    
+    }    
+}

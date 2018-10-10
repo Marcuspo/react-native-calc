@@ -1,14 +1,10 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { Component } from 'react';
 
-import Topo from './src/components/Topo';
-import Resultado from './src/components/Resultado';
-import Painel from './src/components/Painel';
-
-const Calculadora = () => (
-  <View> 
-    <Topo />
-    <Resultado />
-    <Painel />
-  </View>
-);
+import Home from './src/Home';
+export default class App extends Component {
+  render() {
+    return ( 
+      <Home />
+    );    
+  }    
+}
