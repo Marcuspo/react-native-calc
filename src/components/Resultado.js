@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import Visor from './Visor';
+
 export default class Resultado extends Component {
     render() {
       return ( 
-        <View>
-            <Text>
-               Resultado
-            </Text>
-        </View>
+          <Visor />
 
       );    
     }    
