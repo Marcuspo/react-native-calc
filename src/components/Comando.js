@@ -5,7 +5,7 @@ export default class Comando extends Component {
   render() {
     return (
       <View style={style.botao}>
-        <Button title="Calcular" />
+        <Button title="Calcular" color="#841584" />
       </View>
     );
   }
@@ -13,7 +13,7 @@ export default class Comando extends Component {
 
 const style = StyleSheet.create({
   botao: {
-    marginLeft: 66,
-    marginRight: 66
+    justifyContent: "center",
+    alignItems: "center"
   }
 });

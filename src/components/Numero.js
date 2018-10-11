@@ -4,7 +4,7 @@ import { View, TextInput, StyleSheet } from "react-native";
 export default class Entrada extends Component {
   render() {
     return (
-      <View>
+      <View style={style.topo}>
         <TextInput
           style={style.numero}
           placeholder="Numeros"
@@ -17,11 +17,14 @@ export default class Entrada extends Component {
 
 const style = StyleSheet.create({
   numero: {
-    width: 140,
-    height: 80,
+    width: 160,
+    height: 70,
     fontSize: 20,
     borderWidth: 1,
     borderColor: "#C0C0C0",
     marginTop: 15
+  },
+  topo: {
+    alignItems: "center"
   }
 });
