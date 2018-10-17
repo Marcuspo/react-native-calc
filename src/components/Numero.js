@@ -6,6 +6,8 @@ export default class Entrada extends Component {
     return (
       <View style={style.topo}>
         <TextInput
+          onChangeText={ valorDoCampo => this.props.atualizaValor(this.props.nome, valorDoCampo) }
+          value={this.props.num}
           style={style.numero}
           placeholder="Numeros"
           keyboardType="numeric"

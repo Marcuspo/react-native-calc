@@ -7,8 +7,8 @@ export default class Entrada extends Component {
     render() {
         return (
             <View style={style.numeros}>
-                <Numero />
-                <Numero />
+                <Numero num={this.props.num1} atualizaValor={this.props.atualizaValor} nome='num1' />
+                <Numero num={this.props.num2} atualizaValor={this.props.atualizaValor} nome='num2' />
             </View>
         );
     }

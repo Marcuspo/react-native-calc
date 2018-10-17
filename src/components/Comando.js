@@ -5,7 +5,7 @@ export default class Comando extends Component {
   render() {
     return (
       <View style={style.botao}>
-        <Button title="Calcular" color="#841584" />
+        <Button title="Calcular" color="#841584" onPress={this.props.acao} />
       </View>
     );
   }
