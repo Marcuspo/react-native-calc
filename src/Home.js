@@ -18,9 +18,9 @@ export default class Home extends Component {
   }
 
   calcular() {
-    let resultado = 0
+    let resultado = 0;
     
-    switch(this.state.operacao){
+    switch ( this.state.operacao ){
       case 'soma':
         resultado = parseFloat(this.state.num1) + parseFloat(this.state.num2);
         break;
@@ -33,7 +33,7 @@ export default class Home extends Component {
         resultado = 0;
     }
 
-    console.log(resultado);
+    this.setState({ resultado: resultado.toString() })
 
   }
 
@@ -52,8 +52,15 @@ export default class Home extends Component {
     return (
       <View>
         <Topo />
-        <Resultado />
-        <Painel />
+        <Resultado resultado={this.state.resultado} />
+        <Painel
+          num1={this.state.num1}
+          num2={this.state.num2}
+          operacao={this.state.operacao}
+          calcular={this.calcular}
+          atualizaOperacao={this.atualizaOperacao}
+          atualizaValor={this.atualizaValor}
+        />
       </View>
     );
   }

@@ -10,12 +10,15 @@ export default class Painel extends Component {
     return (
       <View>
         <Entrada 
-        num1={this.state.num1} 
-        num2={this.state.num2} 
-        atualizaValor={this.atualizaValor}
+        num1={this.props.num1} 
+        num2={this.props.num2} 
+        atualizaValor={this.props.atualizaValor}
         />
-        <Operacao operacao={this.state.operacao} />
-        <Comando acao={this.calcular} />
+        <Operacao 
+          operacao={this.props.operacao}
+          atualizaOperacao={this.props.atualizaOperacao} 
+        />
+        <Comando acao={this.props.calcular} />
       </View>
     );
   }

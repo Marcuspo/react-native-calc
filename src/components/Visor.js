@@ -10,6 +10,7 @@ export default class Visor extends Component {
           placeholder="Resultado"
           placeholderTextColor="#2196F3"
           editable={false}
+          value={this.props.resultado}
         />
       </View>
     );
